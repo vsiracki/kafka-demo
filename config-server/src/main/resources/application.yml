@@ -1,0 +1,23 @@
+server:
+  port: 8888
+
+logging:
+  level:
+    ROOT: INFO
+    org.spring.framework.cloud.config: DEBUG
+
+
+spring:
+  application:
+    name: configserver
+  config:
+    import: "optional:configserver:https://github.com/vsiracki/spring-cloud-config-server-repository"
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/vsiracki/spring-cloud-config-server-repository
+          clone-on-start: true
+      fail-fast: true
+      enabled: false
