@@ -2,12 +2,12 @@ package com.htec.microservices.kafka.producer.config.service.impl;
 
 import com.htec.microservices.kafka.avro.model.TwitterAvroModel;
 import com.htec.microservices.kafka.producer.config.service.KafkaProducer;
+import jakarta.annotation.PreDestroy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PreDestroy;
 
 @Service
 public class TwitterKafkaProducer implements KafkaProducer<Long, TwitterAvroModel> {
