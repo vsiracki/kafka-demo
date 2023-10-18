@@ -11,6 +11,11 @@ Elastic: docker-compose -f common.yml -f elastic_cluster.yml up
  docker-compose -f common.yml -f elastic_cluster.yml up
 ```
 
+### ELASTICSEARCH (FETCH ALL)###
+```shell 
+ curl --location 'localhost:9200/twitter-index/_search'
+```
+
 ### DOCKER PS (check active containers) ###
 ```shell 
  docker ps
@@ -18,7 +23,7 @@ Elastic: docker-compose -f common.yml -f elastic_cluster.yml up
 
 ### DOCKER PS (check active containers) ###
 ```shell 
- curl --location 'localhost:9200/twitter-index/_search?q=id:3484704647758181427'
+ curl --location 'localhost:9200/twitter-index/_search?q=id:2454292873607068445'
 ```
 
 
