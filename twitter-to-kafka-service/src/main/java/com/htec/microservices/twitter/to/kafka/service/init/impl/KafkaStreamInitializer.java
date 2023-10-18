@@ -10,13 +10,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class KafkaStreamInitializer implements StreamInitializer {
 
-
     private static final Logger log = LoggerFactory.getLogger(KafkaStreamInitializer.class);
 
     private final KafkaConfigData kafkaConfigData;
     private final KafkaAdminClient kafkaAdminClient;
 
-    KafkaStreamInitializer(KafkaConfigData kafkaConfigData, KafkaAdminClient kafkaAdminClient) {
+    KafkaStreamInitializer(KafkaConfigData kafkaConfigData,
+                           KafkaAdminClient kafkaAdminClient) {
         this.kafkaConfigData = kafkaConfigData;
         this.kafkaAdminClient = kafkaAdminClient;
     }

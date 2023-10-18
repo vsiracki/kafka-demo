@@ -1,15 +1,15 @@
 package com.htec.microservices.twitter.to.kafka.service.exception;
 
-public class TwitterToKafkaServiceException extends RuntimeException {
+public class TwitterTOKafkaServiceException extends RuntimeException {
 
-    public TwitterToKafkaServiceException() {
+    public TwitterTOKafkaServiceException() {
         super();
     }
-    public TwitterToKafkaServiceException(String message) {
+    public TwitterTOKafkaServiceException(String message) {
         super(message);
     }
 
-    public TwitterToKafkaServiceException(String message, Throwable cause) {
+    public TwitterTOKafkaServiceException(String message, Throwable cause) {
         super(message, cause);
     }
 }
