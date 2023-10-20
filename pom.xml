@@ -28,6 +28,7 @@
         <module>elastic/elastic-config</module>
         <module>elastic/elastic-index-client</module>
         <module>elastic/elastic-query-client</module>
+        <module>elastic-query-service</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -198,6 +199,12 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-config-server</artifactId>
                 <version>${spring-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-security</artifactId>
+                <version>${spring-boot.version}</version>
             </dependency>
 
             <dependency>
